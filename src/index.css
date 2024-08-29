@@ -2,3 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+  @apply flex flex-col justify-center items-center min-h-screen w-full font-poppins bg-light-grey gap-32 py-8 px-4;
+}
+.container {
+  @apply w-[343px] flex flex-col  items-start gap-16 rounded-custom  bg-white px-6 py-6;
+}
+
+.date-input {
+  @apply flex gap-4
+}
+
+form{
+  @apply flex flex-col gap-8;
+}
+
+form label {
+  @apply text-xs font-bold font-poppins text-smokey-grey;
+}
+
+.date-form input[type="number"]{
+  @apply w-20 h-14 px-2 py-2 text-xl leading-8 font-bold font-poppins text-black border-2  border-light-grey rounded-xl focus:outline-none;
+}
+
+.calculate-container{
+  @apply relative mt-12 flex flex-col justify-center items-center;
+}
+.arrow-button{
+  @apply absolute w-16 h-16 rounded-full bg-purple text-white font-bold text-xs flex items-center justify-center;
+}
+
+.age-display{
+  @apply font-poppins font-extrabold italic text-6xl text-black;
+}
+.age-display span{
+  @apply text-purple;
+}
+
