@@ -27,7 +27,7 @@ form label {
 }
 
 .calculate-container{
-  @apply relative mt-12 flex flex-col justify-center items-center;
+  @apply relative mt-8 flex flex-col justify-center items-center;
 }
 .arrow-button{
   @apply absolute w-16 h-16 rounded-full bg-purple text-white font-bold text-xs flex items-center justify-center;
@@ -40,3 +40,26 @@ form label {
   @apply text-purple;
 }
 
+
+@screen md{
+  .container {
+    @apply w-[640px] rounded-custom-large p-14;
+  }
+
+  form label {
+    @apply text-sm;
+  }
+  .date-form input[type="number"]{
+    @apply w-32;
+  }
+ 
+  .arrow-button{
+    @apply right-0;
+  }
+  .horizontal-line{
+    @apply w-full
+  }
+  .age-display{
+    @apply text-[6rem]
+  }
+}
