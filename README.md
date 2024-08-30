@@ -34,10 +34,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Age calculator mobile preview](./screenshot/age-calculator-mobile-solution-preview.png)
+![Age calculator mobile preview](https://github.com/Rgit915/age-calculator-app/blob/master/public/screenshots/age-calculator-mobile-soultion-preview.png)
 
 
-![Age calculator Invalid error preview](./screenshot/age-calculator-invalid-error-solution-preview.png)
+![Age calculator Invalid error preview](https://github.com/Rgit915/age-calculator-app/blob/master/public/screenshots/age-calculator-invalid-error-solution-preview.png)
 
 
 ### Links
