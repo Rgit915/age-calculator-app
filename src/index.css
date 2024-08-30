@@ -23,7 +23,7 @@ form label {
 }
 
 .date-form input[type="number"]{
-  @apply w-20 h-14 px-2 py-2 text-xl leading-8 font-bold font-poppins text-black border-2  border-light-grey rounded-xl focus:outline-none;
+  @apply w-20 h-14 px-2 py-2 text-xl leading-8 font-bold font-poppins text-black border-2  border-light-grey rounded-xl focus:outline-none hover:border-purple;
 }
 
 .calculate-container{
@@ -31,6 +31,9 @@ form label {
 }
 .arrow-button{
   @apply absolute w-16 h-16 rounded-full bg-purple text-white font-bold text-xs flex items-center justify-center;
+}
+.arrow-button:hover {
+  @apply text-white bg-black
 }
 
 .age-display{
