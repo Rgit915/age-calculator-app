@@ -8,6 +8,7 @@ export default {
     extend: {
       borderRadius: {
         'custom': '24px 24px 100px 24px',
+        'custom-large': '24px, 24px, 200px, 24px',
       },
       colors: {
         "purple": "hsl(259, 100%, 65%)",
