@@ -76,7 +76,7 @@ const DateForm = ({onDateSubmit}) => {
                 <img src="images/icon-arrow.svg" alt="Submit" />
               </button>
             </div>
-            <div className="horizontal-line w-72">
+            <div className="horizontal-line w-full">
               <hr />
             </div>
           </div>
