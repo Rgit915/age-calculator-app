@@ -5,13 +5,13 @@ const DisplayAge = ({ age }) => {
     <section className="age">
     <div className="age-display">
       <div className="age-years">
-        <p><span>{age ? age.years : '- -'}</span> years</p>
+        <h2><span>{age ? age.years : '- -'}</span> years</h2>
       </div>
       <div className="age-months">
-        <p><span>{age ? age.months : '- -'}</span> months</p>
+        <h2><span>{age ? age.months : '- -'}</span> months</h2>
       </div>
       <div className="age-days">
-        <p><span>{age ? age.days : '- -'}</span> days</p>
+        <h2><span>{age ? age.days : '- -'}</span> days</h2>
       </div>
     </div>
   </section>
