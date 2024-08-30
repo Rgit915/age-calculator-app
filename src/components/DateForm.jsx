@@ -1,29 +1,22 @@
 import { useState } from 'react';
 import { validateDate } from '../utils/dateValidation';
 
-const DateForm = () => {
+const DateForm = ({onDateSubmit}) => {
   // State variables to store the input values
   const [day, setDay] = useState('');
   const [month, setMonth] = useState('');
   const [year, setYear] = useState('');
   // State variable to store error messages
   const [errors, setErrors] = useState({ day: '', month: '', year: '' });
-
   const handleSubmit = (e) => {
-    e.preventDefault(); 
-    const validationErrors = validateDate(day, month, year); // Validate the date
-    setErrors(validationErrors); // Set validation errors in the state
+    e.preventDefault();
+    const validationErrors = validateDate(day, month, year);
+    setErrors(validationErrors);
 
-    // If there are no validation errors, proceed with form submission logic
     if (Object.keys(validationErrors).length === 0) {
-      // Handle successful form submission
-      console.log('Date is valid:', { day, month, year });
-    } else {
-      // Handle form submission with errors
-      console.log('Date is invalid');
-
+      onDateSubmit({ day, month, year });
     }
-  }
+  };
 
   return (
     <section className="date-of-birth flex flex-row uppercase text-sm">
@@ -37,6 +30,7 @@ const DateForm = () => {
                 id="day"
                 name="day"
                 placeholder="DD"
+                value={day}
                 onChange={(e) => setDay(e.target.value)}
                 className={`${errors.day ? 'text-light-red' : ''}`}
               />
@@ -52,6 +46,7 @@ const DateForm = () => {
                 id="month"
                 name="month"
                 placeholder="MM"
+                value={month}
                 onChange={(e) => setMonth(e.target.value)}
 
                 />
@@ -66,6 +61,7 @@ const DateForm = () => {
                 id="year"
                 name="year"
                 placeholder="YYYY"
+                value={year}
                 onChange={(e) => setYear(e.target.value)}
                 />
                 <div>
