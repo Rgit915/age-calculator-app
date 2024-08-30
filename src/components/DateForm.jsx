@@ -24,7 +24,7 @@ const DateForm = ({onDateSubmit}) => {
         <form onSubmit={handleSubmit}>
           <div className="date-input">
             <div  className={`input-day ${errors.day ? 'text-light-red' : ''}`}>
-              <label htmlFor="day" className={`${errors.month ? 'text-light-red' : ''}`}>Day</label>
+              <label htmlFor="day" className={`${errors.day ? 'text-light-red' : ''}`}>Day</label>
               <input
                 type="number"
                 id="day"
@@ -32,7 +32,7 @@ const DateForm = ({onDateSubmit}) => {
                 placeholder="DD"
                 value={day}
                 onChange={(e) => setDay(e.target.value)}
-                className={`${errors.day ? 'text-light-red' : ''}`}
+                className={`${errors.day ? 'border-light-red' : 'border-light-gray'}`}
               />
             <div>
               {errors.day && <span className="error-display">{errors.day}</span>}
@@ -48,7 +48,7 @@ const DateForm = ({onDateSubmit}) => {
                 placeholder="MM"
                 value={month}
                 onChange={(e) => setMonth(e.target.value)}
-
+                className={`${errors.month ? 'border-light-red' : 'border-light-gray'}`}
                 />
                 <div>
                 {errors.month && <span className="error-display">{errors.month}</span>}
@@ -63,6 +63,7 @@ const DateForm = ({onDateSubmit}) => {
                 placeholder="YYYY"
                 value={year}
                 onChange={(e) => setYear(e.target.value)}
+                className={`${errors.year ? 'border-light-red' : 'border-light-gray'}`}
                 />
                 <div>
                   {errors.year && <span className="error-display">{errors.year}</span>}

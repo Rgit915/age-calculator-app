@@ -23,7 +23,7 @@ form label {
 }
 
 .date-form input[type="number"]{
-  @apply w-20 h-14 px-2 py-2 text-xl leading-8 font-bold font-poppins text-black border-2  border-light-grey rounded-xl focus:outline-none hover:border-purple;
+  @apply w-20 h-14 px-2 py-2 text-xl leading-8 font-bold font-poppins text-black border-2  rounded-xl focus:outline-none hover:border-purple;
 }
 
 .calculate-container{
