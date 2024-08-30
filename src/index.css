@@ -40,6 +40,10 @@ form label {
   @apply text-purple;
 }
 
+.error-display{
+  @apply text-xs text-light-red font-normal italic lowercase;
+}
+
 
 @screen md{
   .container {
@@ -52,7 +56,7 @@ form label {
   .date-form input[type="number"]{
     @apply w-32;
   }
- 
+
   .arrow-button{
     @apply right-0;
   }
